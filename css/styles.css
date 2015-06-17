@@ -1,1 +1,33 @@
+.character {
+	background-image: url(../images/spritexb-6953.png);
+	background-repeat: no-repeat;
+	width: 32px;
+	height: 48px;
+}
 
+.moving {
+	/* steps causes the animation to chunk into 12 equal pieces */
+	animation: walk-cycle 1s steps(4) infinite;
+}
+
+.down {
+	background-position: 0 0;
+}
+
+.left {
+	background-position: 0 -48px;
+}
+
+.right {
+	background-position: 0 -96px;
+}
+
+.up {
+	background-position: 0 -144px;
+}
+
+
+@keyframes walk-cycle {
+	0% {background-position-x: 0; }
+	100% {background-position-x: -128px; } /* Must be full height of sprite or skipping will happen.*/
+}
