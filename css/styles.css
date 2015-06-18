@@ -7,7 +7,7 @@
 
 .moving {
 	/* steps causes the animation to chunk into 12 equal pieces */
-	animation: walk-cycle 1s steps(4) infinite;
+	animation: walk-cycle .75s steps(4) infinite;
 }
 
 .down {
