@@ -3,10 +3,15 @@
 	<head>
 		 <meta charset="UTF-8">
 		 <link href="css/styles.css" type="text/css" rel="stylesheet">
+		 <script type="text/javascript" src="http://padawin.github.io/Butterfly-js/js/Butterfly.js"></script>
+		 <script type="text/javascript" src="js/scripts.js"></script>
 	</head>
 	<body>
 		<div id="world">
 			<div id="mychar" class="character down"></div>
 		</div>
+		<script type="text/javascript">
+			var c = new World.Character(B.$id('mychar'), true);
+		</script>
 	</body>
 </html>
